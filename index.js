@@ -37,6 +37,7 @@ app.use(fileUpload())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
+const port = process.env.PORT || 3000
 
 global.loggedIn = null;
 
@@ -49,7 +50,7 @@ app.use(expressSession({
     secret:'keyboard-cat'
 }))
 
-app.listen(3000,()=>[
+app.listen(port,()=>[
     console.log('hello i m listening')
 ])
 
