@@ -11,6 +11,7 @@ const expressSession = require("express-session")
 
 const newPostController = require("./controllers/newPost");
 const homeController = require("./controllers/home");
+const aboutController = require("./controllers/aboutMe");
 const storePostController = require("./controllers/storePost");
 const getPostController = require("./controllers/getPost");
 const newUserController = require("./controllers/newUser.js");
@@ -59,6 +60,8 @@ app.get('/post/:id',getPostController);
 app.get('/posts/new',authMiddleware,newPostController);
 
 app.get('/',homeController);
+
+app.get('/about',aboutController);
 
 app.post('/posts/store',authMiddleware,storePostController);
 
