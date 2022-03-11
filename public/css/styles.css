@@ -3472,9 +3472,10 @@ textarea.form-control-lg {
   opacity: 0;
 }
 
-.collapse:not(.show) {
+.collapse:not(.show){
   display: none;
 }
+
 
 .collapsing {
   height: 0;
@@ -4426,6 +4427,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
 }
+
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0.1);
